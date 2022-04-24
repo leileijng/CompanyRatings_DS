@@ -21,12 +21,12 @@ Our raw data and processed data can be found in this [folder](https://github.com
 
 # Solution Snapshot on WebService
 <p float="left">
-  <img width="500" alt="image" src="https://user-images.githubusercontent.com/56954752/164966592-1e139d1f-7388-4194-bd54-0f84bac5fc3a.png">
-  <img width="500" alt="image" src="https://user-images.githubusercontent.com/56954752/164966643-33bcc809-f736-4ced-8dd5-eaacab1bfd5b.png">
+  <img width="600" alt="image" src="https://user-images.githubusercontent.com/56954752/164966592-1e139d1f-7388-4194-bd54-0f84bac5fc3a.png">
+  <img width="600" alt="image" src="https://user-images.githubusercontent.com/56954752/164966643-33bcc809-f736-4ced-8dd5-eaacab1bfd5b.png">
 </p>
 https://jlei002.net/
 <p align="left">
-  ⭐ &nbsp;&nbsp;<strong>Click the link to Predict your company rating & Employee Happiness!</strong> :arrow_upper_right:
+  ⭐ &nbsp;&nbsp;<strong>Click the link to Predict your company rating & Employee Happiness!</strong> :arrow_upper_left:
 </p>
 
 # Models Used
