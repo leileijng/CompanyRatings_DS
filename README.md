@@ -14,7 +14,10 @@ Our raw data and processed data can be found in this [folder](https://github.com
 - @kellykkhoo: EDA, Data Visualisation, Linear Regression Model
 
 # Problem Definition
-- Predict Work Happiness and Company Rating based on the other variables given. 
+- Analyse company performance in terms of **Ratings** & **Employees Happiness Score**
+  - **Prediction**: Company Ratings & Working Happiness Score
+  - **Analysis**: Find most important features affecting work happiness
+  - **Recommendation**: Find anomalies company ratings and advise them
 
 # Models Used
 1. Linear Regression Model
