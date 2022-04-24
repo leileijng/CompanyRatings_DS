@@ -37,17 +37,27 @@ Our raw data and processed data can be found in this [folder](https://github.com
 - datetime
 - time
 
+# Dataset Overview
+Dataset from:
+https://www.kaggle.com/datasets/vaghefi/company-reviews
+- with 17,000 rows and 20 columns
+- Scraped from Indeed.com website containing data from mainly US companies across 50+ industries
+- Containing information about employees' ratings, happiness score, revenue, salaries, etc.
+
 # Files
 ## Jupyter Notebook #1: data_preparation/CompanyRating_Preprocessing_2.ipynb
 The code in this notebook is used to extract data from the original CSV file and prepare it for EDA. 
-- Cleaned our data by dropping unnecessary columns
-- Removed rows with missing data 
-- Dropped rows with low credibility (too few reviews)
-- Changed the format of the **ratings** column from a dictionary to 5 separate columns
-- Changed **employees** and **revenue** from a categorical values to numerical values
-- Calculated **average salary** based using a simple average
-- Grouped companies into 10 separate **industries**
-- Exported the cleaned dataset as .xlsx and .pickle
+1. Data Clea-up
+    - Cleaned our data by dropping unnecessary columns
+    - Removed rows with missing data 
+    - Dropped rows with low credibility (too few reviews)
+2. Data Preparation 
+    - Changed the format of the **ratings** column from a dictionary to 5 separate columns
+    - Changed **employees** and **revenue** from a categorical values to numerical values
+    - Calculated **average salary** based using a simple average
+    - Grouped companies into 10 separate **industries**
+3. Data Exportation
+    - Exported the cleaned dataset as .xlsx and .pickle
 
 ## Jupyter Notebook #2: EDA/EDA_1.ipynb
 In this notebook, we explored the cleaned dataset for the relationship between the different variables.
@@ -59,15 +69,18 @@ In this notebook, we explored the cleaned dataset for the relationship between t
 
 ## Jupyter Notebook #3: Machine Learning/Model 2.ipynb
 In this notebook, we implement various machine learning models in order to predict **company rating** and **work happiness**.
-- Normalised columns except for **rating**
-- Split data into training and test set
-- Fit data into a **linear regression model** to predict **work happiness**
-- Fit data into a **stepwise linear regression model** to predict **work happiness**
-- Used **PCA** to reduce the number of input variables
-- Explored the effects of the **number of principle components** on model performance
-- Fit data into a **linear regression model** to predict **work happiness** after reducing 22 variables to 7 principle components
-- Explored the **relative importance** of the original 22 input variables
-- Fit data into a **Light GBM model** to predict **rating**
-- Explored the **relative importance** of the input variables in the **Light GBM model**
-- Tabulated the anomalise based on our **Light GBM model** (companies whose ratings deviated the most from our prediction)
+1. Preparation: 
+   - Normalised columns except for **rating**
+   - Split data into training and test set
+2. Predict Working Happiness:
+   - Fit data into a **linear regression model** to predict **work happiness**
+   - Fit data into a **stepwise linear regression model** to predict **work happiness**
+   - Used **PCA** to reduce the number of input variables
+     - Explored the effects of the **number of principle components** on model performance
+     - Fit data into a **linear regression model** to predict **work happiness** after reducing 22 variables to 7 principle components
+     - Explored the **relative importance** of the original 22 input variables
+3. Predict Company Ratings
+   - Fit data into a **Light GBM model** to predict **rating**
+   - Explored the **relative importance** of the input variables in the **Light GBM model**
+   - Tabulated the **anomalise** based on our **Light GBM model** (companies whose ratings deviated the most from our prediction)
 
