@@ -19,6 +19,14 @@ Our raw data and processed data can be found in this [folder](https://github.com
   - **Analysis**: Find most important features affecting work happiness
   - **Recommendation**: Find anomalies company ratings and advise them
 
+# Solution Snapshot on WebService
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/56954752/164966592-1e139d1f-7388-4194-bd54-0f84bac5fc3a.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/56954752/164966643-33bcc809-f736-4ced-8dd5-eaacab1bfd5b.png">
+https://jlei002.net/
+<p align="right">
+  ⭐ &nbsp;&nbsp;<strong>Click the link to Predict your company rating & Employee Happiness!</strong> :arrow_upper_right:
+</p>
+
 # Models Used
 1. Linear Regression Model
 2. Stepwise Linear Regression Model
@@ -61,11 +69,15 @@ The code in this notebook is used to extract data from the original CSV file and
 
 ## Jupyter Notebook #2: EDA/EDA_1.ipynb
 In this notebook, we explored the cleaned dataset for the relationship between the different variables.
-- Statistical distribution & summary of target variables (**rating** and **work happiness**)
-- Distribution of numerical explanatory variables
-- Correlation of explanatory variables and target variables
-- Distribution of categorical variables (**employees**, **revenue** and **industry**)
-- Correlation between explanatory variables and target variables, sorted by **industry**
+1. Uni-Variate:
+  - Statistical distribution & summary of 2 predictors (**rating** and **work happiness**)
+2. Multi-Variate:
+  - Distribution of numerical explanatory variables
+  - Correlation of explanatory variables and predictors (heatmap, jointplot, etc.)
+  - Distribution of categorical variables (**employees**, **revenue** and **industry**)
+  - Correlation of explanatory variables and predictors (boxplot, bar plot, etc.)
+3. Industry-Based Exploration:
+  - Correlation between explanatory variables and target variables, sorted by **industry**
 
 ## Jupyter Notebook #3: Machine Learning/Model 2.ipynb
 In this notebook, we implement various machine learning models in order to predict **company rating** and **work happiness**.
