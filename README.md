@@ -25,7 +25,7 @@ Our raw data and processed data can be found in this [folder](https://github.com
   <img width="500" alt="image" src="https://user-images.githubusercontent.com/56954752/164966643-33bcc809-f736-4ced-8dd5-eaacab1bfd5b.png">
 </p>
 https://jlei002.net/
-<p align="right">
+<p align="left">
   ⭐ &nbsp;&nbsp;<strong>Click the link to Predict your company rating & Employee Happiness!</strong> :arrow_upper_right:
 </p>
 
